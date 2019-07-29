@@ -1,0 +1,4 @@
+#!/bin/bash
+sbcl --no-userinit \
+     --load edit.lisp \
+     --eval "(sb-ext:save-lisp-and-die \"edit\" :toplevel 'main :executable t)"
